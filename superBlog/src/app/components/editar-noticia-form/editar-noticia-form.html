@@ -1,0 +1,25 @@
+<h2>Edita la noticia</h2>
+<form (submit)="editarNoticia();">
+    <div>
+        <label>Titulo:</label>
+        <input type="text" [(ngModel)]="titulo" name="titulo" required>
+    </div>
+
+    <div>
+        <label>Imagen:</label>
+        <input type="text" [(ngModel)]="imagen" name="imagen">
+    </div>
+
+    <div>
+        <label>Texto:</label>
+        <textarea [(ngModel)]="texto" name="texto" required></textarea>
+    </div>
+
+    <div>
+        <label>Fecha:</label>
+        <input type="date" [(ngModel)]="fecha" name="fecha" required>
+    </div>
+
+    <button type="submit">Editar noticia</button>
+</form>
+

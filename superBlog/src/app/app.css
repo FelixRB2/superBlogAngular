@@ -1,0 +1,29 @@
+/* app.component.css */
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #007bff; /* azul bonito */
+  padding: 1rem 2rem;
+  color: #fff;
+}
+
+.main-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.btn-header {
+  text-decoration: none;
+  color: #fff;
+  background-color: #28a745; /* verde */
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.btn-header:hover {
+  background-color: #218838;
+}

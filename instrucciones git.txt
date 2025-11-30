@@ -1,0 +1,26 @@
+git clone (ruta del repositorio) (carpeta de destino)
+
+git remote -v
+
+git init
+
+git remote add origin (ruta repositorio)
+
+git add . 
+
+git commit -m "comentario"
+
+git push origin master
+
+Actualizar en local
+
+git pull origin master
+
+git status
+
+(crear rama) 
+git checkout -b (nombre de la rama)
+
+git checkout (nombre de la rama)
+
+git branch

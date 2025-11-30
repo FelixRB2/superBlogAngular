@@ -1,0 +1,7 @@
+.articulos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;             /* más espacio entre cards */
+  justify-content: center;
+  padding: 1rem;
+}

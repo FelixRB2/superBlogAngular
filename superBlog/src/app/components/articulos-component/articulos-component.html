@@ -1,0 +1,8 @@
+<div class="container mt-4">
+  <div class="articulos-grid">
+  @for (articulo of articulos; track articulo.id) {
+    <app-articulo-card [articulo]="articulo"></app-articulo-card>
+  }
+</div>
+
+</div>
