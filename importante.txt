@@ -1,0 +1,62 @@
+import { Injectable } from '@angular/core';
+import { ArticuloInterface } from '../interfaces/articulo-interface';
+
+@Injectable({
+  providedIn: 'root',
+})
+export class ApiService {
+  private articulos: ArticuloInterface[] = [];
+
+  constructor() {
+
+    // 🔥 ARTÍCULOS POR DEFECTO
+    this.articulos = [
+      {
+        id: 1,
+        titulo: 'Primer artículo',
+        imagen: 'https://picsum.photos/300?random=1',
+        texto: 'Este es el primer artículo cargado por defecto.',
+        fecha: new Date('2024-01-01')
+      },
+      {
+        id: 2,
+        titulo: 'Segundo artículo',
+        imagen: 'https://picsum.photos/300?random=2',
+        texto: 'Este es otro artículo para pruebas.',
+        fecha: new Date('2024-02-15')
+      },
+      {
+        id: 3,
+        titulo: 'Artículo sin imagen',
+        texto: 'Este artículo no tiene imagen.',
+        fecha: new Date('2024-03-10')
+      }
+    ];
+  }
+
+  getAllArticles(): ArticuloInterface[] {
+    return this.articulos;
+  }
+
+  agregarArticulo(nueva: ArticuloInterface) {
+    this.articulos.push(nueva);
+  }
+
+  eliminarNoticia(id: number) {
+    this.articulos = this.articulos.filter(a => a.id !== id);
+  }
+
+  getArticuloById(id: number): ArticuloInterface | undefined {
+    return this.articulos.find(a => a.id === id);
+  }
+
+  editarArticulo(articulo: ArticuloInterface) {
+    const index = this.articulos.findIndex(a => a.id === articulo.id);
+    if (index !== -1) {
+      this.articulos[index] = articulo;
+    }
+  }
+}
+
+
+

@@ -1,0 +1,636 @@
+¡Claro! Aquí tienes una **chuleta compacta, clara y útil** con lo MÁS importante de **CSS**, **estilos**, y **Bootstrap 5**, ideal para exámenes y proyectos.
+
+Está organizada para encontrar rápido lo que necesitas.
+
+---
+
+# 🎨 **CHULETA CSS + Bootstrap (Super Completa y Fácil)**
+
+---
+
+# 🎯 1. **Selectores CSS esenciales**
+
+| Selector       | Ejemplo       | Explicación                         |
+| -------------- | ------------- | ----------------------------------- |
+| Clase          | `.caja {}`    | Selecciona elementos con esa clase  |
+| ID             | `#header {}`  | Selecciona un único elemento por id |
+| Etiqueta       | `p {}`        | Todos los elementos `<p>`           |
+| Descendiente   | `div p {}`    | `<p>` dentro de `<div>`             |
+| Hijo directo   | `div > p {}`  | `<p>` hijo directo de `<div>`       |
+| Múltiples      | `.a, .b {}`   | Aplica estilos a ambas clases       |
+| Pseudoclase    | `a:hover {}`  | Cuando el ratón pasa por encima     |
+| Pseudoelemento | `p::after {}` | Contenido virtual                   |
+
+---
+
+# 🎨 2. **Propiedades de texto**
+
+```css
+font-size: 16px;
+font-weight: bold;
+font-family: Arial, sans-serif;
+color: #333;
+text-align: center;      /* left, right, justify */
+text-transform: uppercase; /* capitalize, lowercase */
+line-height: 1.5;
+```
+
+---
+
+# 📦 3. **Propiedades de cajas (Box Model)**
+
+```css
+width: 200px;
+height: 150px;
+
+padding: 10px;   /* espacio interior */
+margin: 20px;    /* separación exterior */
+border: 2px solid black;
+border-radius: 10px;
+```
+
+---
+
+# 🧱 4. **Display más usados**
+
+```css
+display: block;     /* ocupa toda la línea */
+display: inline;    /* no acepta width/height */
+display: inline-block; /* mezcla */
+display: flex;      /* muy usado */
+display: grid;      /* diseño por rejillas */
+```
+
+---
+
+# 🔥 5. **Flexbox (imprescindible)**
+
+### Contenedor:
+
+```css
+display: flex;
+justify-content: center;   /* eje principal */
+align-items: center;       /* eje secundario */
+flex-direction: row;       /* column, row-reverse */
+gap: 10px;                 /* separación */
+flex-wrap: wrap;           /* permite saltos de línea */
+```
+
+### Hijo:
+
+```css
+flex: 1;            /* ocupa espacio */
+align-self: center; /* sobreescribe align-items */
+```
+
+---
+
+# 📐 6. **Grid básico**
+
+```css
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 10px;
+```
+
+Ejemplo 3 columnas iguales ⬆️
+
+---
+
+# 🎭 7. **Colores y fondos**
+
+```css
+background-color: #f0f0f0;
+background-image: url("img.png");
+background-size: cover;   /* contain, auto */
+background-position: center;
+```
+
+---
+
+# ✨ 8. **Sombras**
+
+```css
+box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+text-shadow: 1px 1px 3px #000;
+```
+
+---
+
+# 🌀 9. **Transiciones y animaciones**
+
+```css
+transition: all 0.3s ease;
+```
+
+Ejemplo:
+
+```css
+button:hover {
+  transform: scale(1.1);
+}
+```
+
+---
+
+# 📱 10. **Responsive (media queries)**
+
+```css
+@media (max-width: 768px) {
+  .caja { width: 100%; }
+}
+```
+
+---
+
+# 🎁 11. **Bootstrap 5 – Lo esencial**
+
+> **Bootstrap = clases listas para usar sin CSS**
+
+---
+
+# ➤ **Sistema de Grid (muy importante)**
+
+### Estructura base:
+
+```html
+<div class="container">
+  <div class="row">
+    <div class="col">A</div>
+    <div class="col">B</div>
+  </div>
+</div>
+```
+
+### Colores útiles:
+
+```
+col-12  → ocupa toda la fila
+col-6   → media fila
+col-md-4 → en móvil 12, en tablet 4
+col-lg-3 → en desktop 3 columnas
+```
+
+---
+
+# ➤ **Espaciado (padding + margin)**
+
+### Padding:
+
+```
+p-0  p-1  p-2  p-3  p-4  p-5
+pt-2  pb-3  ps-4  pe-4
+```
+
+### Margin:
+
+```
+m-0  m-1  m-2  m-3
+mt-3  mb-5  ms-2  me-2
+mx-auto → centrar horizontalmente
+```
+
+---
+
+# ➤ **Colores**
+
+```
+text-primary
+text-danger
+text-success
+bg-dark
+bg-warning
+bg-info
+```
+
+---
+
+# ➤ **Botones**
+
+```html
+<button class="btn btn-primary">Aceptar</button>
+<button class="btn btn-danger">Eliminar</button>
+<button class="btn btn-warning">Alerta</button>
+```
+
+---
+
+# ➤ **Cards**
+
+```html
+<div class="card">
+  <img src="img.jpg" class="card-img-top">
+  <div class="card-body">
+    <h5 class="card-title">Título</h5>
+    <p class="card-text">Texto.</p>
+  </div>
+</div>
+```
+
+---
+
+# ➤ **Formulario**
+
+```html
+<input class="form-control" type="text">
+<button class="btn btn-primary">Enviar</button>
+```
+
+---
+
+# ➤ **Flexbox en Bootstrap**
+
+```
+d-flex
+justify-content-center
+justify-content-between
+align-items-center
+gap-3
+```
+
+---
+
+# 🧩 **Bootstrap utilidades rápidas**
+
+| Acción            | Clase                                    |
+| ----------------- | ---------------------------------------- |
+| Hacer bloque      | `d-block`                                |
+| Ocultar           | `d-none`                                 |
+| Imagen responsive | `img-fluid`                              |
+| Bordes            | `border`, `border-0`, `border-primary`   |
+| Redondear         | `rounded`, `rounded-circle`, `rounded-3` |
+| Texto centrado    | `text-center`                            |
+
+---
+
+¡Perfecto! Aquí tienes **dos chuletas completas, claras y súper útiles**:
+
+* **Chuleta de HTML (todo lo importante)**
+* **Chuleta de Angular (standalone, signals opcional, estructura moderna)**
+
+He intentado hacerlas compactas pero completas, perfectas para clase, exámenes o repasar rápidamente.
+
+---
+
+# 🟦 **CHULETA HTML — LO ESENCIAL**
+
+---
+
+# 📌 1. **Estructura básica**
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Título</title>
+</head>
+<body>
+
+</body>
+</html>
+```
+
+---
+
+# 📌 2. **Etiquetas más importantes**
+
+| Etiqueta               | Uso                           |
+| ---------------------- | ----------------------------- |
+| `<h1>–<h6>`            | Títulos                       |
+| `<p>`                  | Párrafo                       |
+| `<br>`                 | Salto de línea                |
+| `<hr>`                 | Línea horizontal              |
+| `<b>`, `<strong>`      | Negrita (importante → strong) |
+| `<i>`, `<em>`          | Cursiva (importante → em)     |
+| `<span>`               | Texto en línea                |
+| `<div>`                | Contenedor de bloque          |
+| `<img>`                | Imagen                        |
+| `<a>`                  | Enlaces                       |
+| `<ul>`, `<ol>`, `<li>` | Listas                        |
+
+---
+
+# 📌 3. **Imágenes**
+
+```html
+<img src="foto.jpg" alt="Descripción" width="300">
+```
+
+---
+
+# 📌 4. **Enlaces**
+
+```html
+<a href="https://google.com" target="_blank">Abrir Google</a>
+```
+
+---
+
+# 📌 5. **Tablas**
+
+```html
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Edad</th>
+  </tr>
+  <tr>
+    <td>Juan</td>
+    <td>20</td>
+  </tr>
+</table>
+```
+
+---
+
+# 📌 6. **Formularios**
+
+```html
+<form>
+  <input type="text" placeholder="Nombre">
+  <input type="password">
+  <textarea></textarea>
+  <button type="submit">Enviar</button>
+</form>
+```
+
+Tipos comunes de input:
+
+```
+text, password, email, date, number, file, checkbox, radio
+```
+
+---
+
+# 📌 7. **Semántica HTML5 importante**
+
+| Etiqueta    | Para                    |
+| ----------- | ----------------------- |
+| `<header>`  | Cabecera/menú           |
+| `<nav>`     | Navegación              |
+| `<section>` | Secciones               |
+| `<article>` | Contenido independiente |
+| `<aside>`   | Barra lateral           |
+| `<footer>`  | Footer                  |
+| `<main>`    | Contenido principal     |
+
+---
+
+# 📌 8. **Atributos esenciales**
+
+```
+id=""
+class=""
+src=""
+href=""
+alt=""
+placeholder=""
+value=""
+required
+disabled
+readonly
+```
+
+---
+
+# 📌 9. **Comentarios**
+
+```html
+<!-- Esto es un comentario -->
+```
+
+---
+
+# 🎉 **CHULETA DE HTML LISTA**
+
+---
+
+---
+
+# 🟩 **CHULETA DE ANGULAR (STANDALONE, MUY IMPORTANTE)**
+
+Angular moderno (2023–2025) → sin módulos, usando **standalone components**.
+
+---
+
+# 📌 1. **Componente Standalone**
+
+```ts
+@Component({
+  selector: 'app-ejemplo',
+  standalone: true,
+  templateUrl: './ejemplo.html',
+  styleUrls: ['./ejemplo.css'],
+  imports: []
+})
+export class EjemploComponent {}
+```
+
+---
+
+# 📌 2. **Interpolación (mostrar datos)**
+
+```html
+<p>{{ nombre }}</p>
+```
+
+---
+
+# 📌 3. **Propiedad + Evento**
+
+```ts
+nombre = 'Felix';
+
+cambiar() {
+  this.nombre = 'Nuevo';
+}
+```
+
+```html
+<input [(ngModel)]="nombre">
+<button (click)="cambiar()">Cambiar</button>
+```
+
+---
+
+# 📌 4. **Estructuras nuevas: @if, @for, @switch**
+
+*(Angular 17+)*
+
+### `@if`
+
+```html
+@if (mostrar) {
+  <p>Visible</p>
+} @else {
+  <p>No visible</p>
+}
+```
+
+### `@for`
+
+```html
+@for (item of lista; track item.id) {
+  <p>{{ item.nombre }}</p>
+}
+```
+
+---
+
+# 📌 5. **Router (muy importante)**
+
+### Declarar rutas
+
+```ts
+export const routes: Routes = [
+  { path: 'home', component: HomeComponent },
+  { path: 'detalle/:id', component: DetalleComponent },
+  { path: '**', redirectTo: 'home' }
+];
+```
+
+### Navegar por botón
+
+```html
+<button [routerLink]="['/detalle', id]">Ver</button>
+```
+
+### Navegar desde TS
+
+```ts
+this.router.navigate(['/home']);
+```
+
+### Obtener parámetros
+
+```ts
+id = Number(this.route.snapshot.params['id']);
+```
+
+O reactivo:
+
+```ts
+this.route.params.subscribe(p => this.id = p['id']);
+```
+
+---
+
+# 📌 6. **Servicios (inyección y datos)**
+
+### Crear servicio
+
+```ts
+@Injectable({ providedIn: 'root' })
+export class ApiService {
+  datos = [];
+
+  getDatos() {
+    return this.datos;
+  }
+}
+```
+
+### Inyectarlo
+
+```ts
+private api = inject(ApiService);
+```
+
+---
+
+# 📌 7. **Fetch / HttpClient**
+
+### Con fetch
+
+```ts
+fetch(url)
+  .then(r => r.json())
+  .then(data => this.lista = data);
+```
+
+---
+
+# 📌 8. **ngModel (formularios)**
+
+```html
+<input [(ngModel)]="titulo" name="titulo">
+```
+
+Es obligatorio **añadir FormsModule** en imports del componente.
+
+---
+
+# 📌 9. **Eventos útiles**
+
+| Evento     | Para              |
+| ---------- | ----------------- |
+| `(click)`  | Pulsar botón      |
+| `(input)`  | Cambiar texto     |
+| `(submit)` | Enviar formulario |
+
+---
+
+# 📌 10. **Clases y estilos dinámicos**
+
+### Clases:
+
+```html
+<p [class.activo]="esActivo"></p>
+```
+
+### Estilos:
+
+```html
+<p [style.color]="rojo ? 'red' : 'blue'"></p>
+```
+
+---
+
+# 📌 11. **Pipes**
+
+```html
+<p>{{ fecha | date:'dd/MM/yyyy' }}</p>
+<p>{{ precio | currency:'EUR' }}</p>
+```
+
+---
+
+# 📌 12. **Importar componentes hijos**
+
+```ts
+imports: [FormsModule, RouterModule, OtroComponente]
+```
+
+---
+
+# 📌 13. **Signals (opcional)**
+
+```ts
+nombre = signal('Felix');
+this.nombre.set('Nuevo');
+```
+
+---
+
+# 📌 14. **Ciclo de vida (lo básico)**
+
+```ts
+ngOnInit() {}
+ngOnDestroy() {}
+```
+
+---
+
+# 📌 15. **Errores típicos**
+
+| Error                 | Causa                                        |
+| --------------------- | -------------------------------------------- |
+| *No provider for X*   | No está el servicio en `root`                |
+| *Cannot bind ngModel* | Falta `FormsModule`                          |
+| Ruta no funciona      | RouterLink mal escrito o ruta antes que `**` |
+| Datos indefinidos     | fetch asíncrono                              |
+
+---
+
+
